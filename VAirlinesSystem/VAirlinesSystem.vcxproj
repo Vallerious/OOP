@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8353C9CE-56C0-44A7-B8D5-4A0184174C4A}</ProjectGuid>
-    <RootNamespace>OOP</RootNamespace>
+    <ProjectGuid>{3752F694-7EC9-4552-B5B3-30EA2762DAB4}</ProjectGuid>
+    <RootNamespace>VAirlinesSystem</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -76,7 +76,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\VAirlineSystem</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,12 +115,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClInclude Include="AirplaneReservationManager.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Route.h" />
+    <ClInclude Include="Seat.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VAirlinesSystem\VAirlinesSystem.vcxproj">
-      <Project>{3752f694-7ec9-4552-b5b3-30ea2762dab4}</Project>
-    </ProjectReference>
+    <ClCompile Include="AirplaneReservationManager.cpp" />
+    <ClCompile Include="AvioCompanyFactory.h" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Seat.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
